@@ -28,15 +28,15 @@ const Index = () => {
         {/* Blog Header */}
         <Box>
           <Heading as="h1" size="2xl">
-            Personal Blog
+            Asmeninis tinklaraštis
           </Heading>
-          <Text mt={2}>Welcome to my personal blog where you can support me and stay updated!</Text>
+          <Text mt={2}>Sveiki atvykę į mano asmeninį tinklaraštį, kuriame galite mane paremti ir išlikti informuoti!</Text>
         </Box>
 
         {/* Messaging Feature */}
         <Box bg="gray.100" p={5} borderRadius="md">
           <Heading as="h3" size="lg" mb={3}>
-            Leave a Message
+            Palikite žinutę
           </Heading>
           <VStack>
             {messages.map((msg, index) => (
@@ -46,9 +46,9 @@ const Index = () => {
             ))}
           </VStack>
           <FormControl id="message" mt={4}>
-            <FormLabel>Write your message here</FormLabel>
+            <FormLabel>Čia parašykite savo žinutę</FormLabel>
             <Flex>
-              <Textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Your message..." />
+              <Textarea value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Jūsų žinutė..." />
               <IconButton colorScheme="blue" aria-label="Send message" icon={<FaPlus />} ml={2} onClick={handleSendMessage} />
             </Flex>
           </FormControl>
@@ -57,14 +57,14 @@ const Index = () => {
         {/* Support Me Section */}
         <Box>
           <Heading as="h3" size="lg" mb={3}>
-            Support Me
+            Paremkite mane
           </Heading>
           <Flex alignItems="center">
             <Button leftIcon={<FaDonate />} colorScheme="green" mr={3}>
-              Donate with PayPal
+              Paaukokite per PayPal
             </Button>
             <Button leftIcon={<FaPencilAlt />} variant="outline">
-              Become a Patron
+              Tapkite rėmėju
             </Button>
           </Flex>
         </Box>
@@ -72,25 +72,25 @@ const Index = () => {
         {/* Opportunities for Non-Adults */}
         <Box>
           <Heading as="h3" size="lg" mb={3}>
-            Opportunities for Non-Adults
+            Galimybės nepilnamečiams
           </Heading>
-          <Text>Here you can find all the ways to earn money without ID verification, deposits, investments, and easy money strategies.</Text>
+          <Text>Čia galite rasti visas galimybes užsidirbti pinigų be asmens tapatybės patvirtinimo, be depozitų, be investicijų ir lengvų pinigų strategijų.</Text>
           <Image src="https://images.unsplash.com/photo-1502920514313-52581002a659?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtb25leSUyMG1ha2luZyUyMG9wcG9ydHVuaXRpZXN8ZW58MHx8fHwxNzA4NjM2ODg0fDA&ixlib=rb-4.0.3&q=80&w=1080" mt={4} borderRadius="md" />
         </Box>
 
         {/* Updates and Advertisements */}
         <Box>
           <Heading as="h3" size="lg" mb={3}>
-            Updates & Advertisements
+            Naujinimai ir reklamos
           </Heading>
-          <Text>Stay tuned for updates and check out these amazing opportunities!</Text>
+          <Text>Sekite naujinimus ir išbandykite šias nuostabias galimybes!</Text>
           {/* Placeholder for advertisements */}
           <Stack mt={4} spacing={3}>
             <Box p={4} bg="gray.200" borderRadius="md">
-              <Text>Ad Space 1</Text>
+              <Text>Reklamos vieta 1</Text>
             </Box>
             <Box p={4} bg="gray.200" borderRadius="md">
-              <Text>Ad Space 2</Text>
+              <Text>Reklamos vieta 2</Text>
             </Box>
           </Stack>
         </Box>
@@ -102,7 +102,7 @@ const Index = () => {
             <IconButton aria-label="Email" icon={<FaEnvelope />} />
             {/* Add more contact icons if needed */}
           </Stack>
-          <Text>© {new Date().getFullYear()} Personal Blog. All rights reserved.</Text>
+          <Text>© {new Date().getFullYear()} Asmeninis tinklaraštis. Visos teisės saugomos.</Text>
         </Flex>
       </VStack>
     </Container>
