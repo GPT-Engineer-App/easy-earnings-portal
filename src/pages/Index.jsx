@@ -74,8 +74,24 @@ const Index = () => {
           <Heading as="h3" size="lg" mb={3}>
             Galimybės nepilnamečiams
           </Heading>
-          <Text>Čia galite rasti visas galimybes užsidirbti pinigų be asmens tapatybės patvirtinimo, be depozitų, be investicijų ir lengvų pinigų strategijų.</Text>
-          <Image src="https://images.unsplash.com/photo-1502920514313-52581002a659?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtb25leSUyMG1ha2luZyUyMG9wcG9ydHVuaXRpZXN8ZW58MHx8fHwxNzA4NjM2ODg0fDA&ixlib=rb-4.0.3&q=80&w=1080" mt={4} borderRadius="md" />
+          <Text>Čia pateikiamos kelios galimybės, kaip nepilnamečiai gali užsidirbti pinigų:</Text>
+          <VStack mt={4} spacing={3}>
+            <Box p={4} bg="gray.200" borderRadius="md">
+              <Text>1. Vaikų priežiūra – saugokitės vaikus savo arba jų namuose.</Text>
+            </Box>
+            <Box p={4} bg="gray.200" borderRadius="md">
+              <Text>2. Socialinių medijų valdymas – padėkite vietos verslams tvarkyti jų socialinius tinklus.</Text>
+            </Box>
+            <Box p={4} bg="gray.200" borderRadius="md">
+              <Text>3. Naminių gyvūnėlių prižiūrėjimas – rūpinkitės gyvūnais, kai jų šeimininkai išvykę.</Text>
+            </Box>
+            <Box p={4} bg="gray.200" borderRadius="md">
+              <Text>4. Vaikščiojimas su šunimis – pasiimkite kaimynų šunis pasivaikščioti.</Text>
+            </Box>
+            <Box p={4} bg="gray.200" borderRadius="md">
+              <Text>5. Internetiniai apklausų užpildymai – užpildykite apklausas internete ir gaukite atlygį.</Text>
+            </Box>
+          </VStack>
         </Box>
 
         {/* Updates and Advertisements */}
